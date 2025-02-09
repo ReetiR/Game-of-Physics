@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A highly interactive physics-inspired website">
+    <title>Game of Physics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Physics Playground</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#simulation">Simulation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Physics Playground</h1>
+            <p>Explore the wonders of physics through interactive 3D simulations.</p>
+            <button id="start-button">Start Simulation</button>
+        </div>
+        <div id="hero-canvas-container">
+            <canvas id="hero-canvas"></canvas>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We create interactive physics simulations to make learning fun and engaging.</p>
+    </section>
+
+    <!-- Simulation Section -->
+    <section id="simulation" class="simulation">
+        <h2>Interactive 3D Physics Simulation</h2>
+        <div id="simulation-canvas-container">
+            <canvas id="simulation-canvas"></canvas>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Physics Playground. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="utils/animations.js"></script>
+    <script src="utils/physics.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
